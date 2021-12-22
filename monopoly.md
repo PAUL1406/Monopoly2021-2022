@@ -1,4 +1,5 @@
-# Monopoly2021-2022
+# Monopoly 2021-2022
+
 int menu()
 {
     int choix;
@@ -16,6 +17,7 @@ int menu()
     while(choix<1 || choix>5);
     return choix;
 }
+
 int main()
 {
     int decision;
