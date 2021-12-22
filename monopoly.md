@@ -34,6 +34,7 @@ int main()
             char pion[20];
             char nom[20];
             } joueur;
+            
             void InfoJoueur ()
             {
                 int nbJoueur;
@@ -52,6 +53,7 @@ int main()
                 scanf("%s",&(tablo[i].nom));
                 }
             }
+            
                     void affichage(t_joueur tablo[nbJoueur])
                     {
                         for (int i=0; i<nbJoueur; i++)
@@ -59,19 +61,24 @@ int main()
                 printf("%s\n %s\n ",tablo[i].nom,tablo[i].pion);
             }
         }
+        
                 break;
             }
+            
             case 2:
             {
                 printf("vous avez decidé de rester au menu principal du jeu\n");
                 break;
             }
+            
             //case 3:
             //{
             //}
+            
             //case 4:
             //{
             //}
+            
             //case 5:
             //{
             //}
