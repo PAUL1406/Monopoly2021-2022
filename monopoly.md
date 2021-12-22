@@ -34,7 +34,6 @@ int main()
             char pion[20];
             char nom[20];
             } joueur;
-
             void InfoJoueur ()
             {
                 int nbJoueur;
@@ -43,7 +42,6 @@ int main()
                 fflush(stdin);
                 scanf("%d", &nbJoueur);
                 }while (nbJoueur<2 || nbJoueur>4);
-
                 joueurS*=malloc(nbJoueur*sizeof(joueur));
                 int i;
                 for (i=0; i<nbJoueur; i++)
@@ -53,7 +51,6 @@ int main()
                 printf("saisissez votre nom");
                 scanf("%s",&(tablo[i].nom));
                 }
-
             }
                     void affichage(t_joueur tablo[nbJoueur])
                     {
@@ -62,7 +59,6 @@ int main()
                 printf("%s\n %s\n ",tablo[i].nom,tablo[i].pion);
             }
         }
-
                 break;
             }
             case 2:
@@ -72,15 +68,12 @@ int main()
             }
             //case 3:
             //{
-
             //}
             //case 4:
             //{
-
             //}
             //case 5:
             //{
-
             //}
         }
     }
