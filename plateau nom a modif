@@ -437,8 +437,7 @@ void affichageCases()
     printf(" ");
     }
     Color(15,0);
-
-
+}
 
 int main(){
     affichagePlateau();
