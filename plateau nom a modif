@@ -87,7 +87,7 @@ void affichageCases()
     //case 1
     Color(15,0);
     Color(10,0);
-    gotoligcol(4,5);
+    gotoligcol(4,4);
     printf("Station");
 
     //case 2
@@ -137,7 +137,7 @@ void affichageCases()
     Color(15,0);
 
     //case 7
-    gotoligcol(4,89);
+    gotoligcol(4,88);
     printf("Encelade");
     Color(14,14);
     for(int a = 85; a<98; a++){
@@ -160,7 +160,7 @@ void affichageCases()
     //case 9
     gotoligcol(4,116);
     printf("Essence");
-    Color(6,6);
+    Color(8,8);
     for(int a = 113; a<126; a++){
     gotoligcol(2,a);
     printf(" ");
@@ -263,14 +263,14 @@ void affichageCases()
     //case 21
 
     Color(10,0);
-    gotoligcol(85,24);
+    gotoligcol(85,25);
     printf("Depart");
      Color(15,0);
 
      //case 22
     gotoligcol(85,11);
     printf("Venus");
-    Color(8,8);
+    Color(13,13);
     for(int a = 7; a<20; a++){
     gotoligcol(83,a);
     printf(" ");
@@ -286,7 +286,7 @@ void affichageCases()
     //case 24
     gotoligcol(84,102);
     printf("Mercure");
-    Color(8,8);
+    Color(13,13);
     for(int a = 99; a<112; a++){
     gotoligcol(82,a);
     printf(" ");
@@ -300,7 +300,7 @@ void affichageCases()
     Color(15,0);
 
     //case 26
-    gotoligcol(84,73);
+    gotoligcol(84,74);
     printf("Spoutnik");
     Color(7,7);
     for(int a = 71; a<84; a++){
@@ -365,7 +365,7 @@ void affichageCases()
     //case 33
     gotoligcol(68,2);
     printf("Reparations");
-    Color(6,6);
+    Color(8,8);
     for(int a = 1; a<14; a++){
     gotoligcol(66,a);
     printf(" ");
@@ -405,7 +405,7 @@ void affichageCases()
     //case 37
     gotoligcol(36,5);
     printf("Protee");
-    Color(15,15);
+    Color(6,6);
     for(int a = 2; a<14; a++){
     gotoligcol(34,a);
     printf(" ");
@@ -421,7 +421,7 @@ void affichageCases()
     //case39
     gotoligcol(20,5);
     printf("Triton");
-    Color(15,15);
+    Color(6,6);
     for(int a = 2; a<14; a++){
     gotoligcol(18,a);
     printf(" ");
@@ -431,7 +431,7 @@ void affichageCases()
     //case 40
     gotoligcol(12,5);
     printf("Neptune");
-    Color(15,15);
+    Color(6,6);
     for(int a = 2; a<14; a++){
     gotoligcol(10,a);
     printf(" ");
