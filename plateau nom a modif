@@ -356,7 +356,7 @@ void affichageCases()
     gotoligcol(76,5);
     printf("Deinos");
     Color(5,5);
-    for(int a = 2; a<14; a++){
+    for(int a = 1; a<14; a++){
     gotoligcol(74,a);
     printf(" ");
     }
@@ -376,7 +376,7 @@ void affichageCases()
     gotoligcol(60,5);
     printf("Phobos");
     Color(5,5);
-    for(int a = 2; a<14; a++){
+    for(int a = 1; a<14; a++){
     gotoligcol(58,a);
     printf(" ");
     }
@@ -386,7 +386,7 @@ void affichageCases()
     gotoligcol(52,6);
     printf("Mars");
     Color(5,5);
-    for(int a = 2; a<14; a++){
+    for(int a = 1; a<14; a++){
     gotoligcol(50,a);
     printf(" ");
     }
@@ -396,7 +396,7 @@ void affichageCases()
     gotoligcol(44,5);
     printf("Glory");
     Color(7,7);
-    for(int a = 2; a<14; a++){
+    for(int a = 1; a<14; a++){
     gotoligcol(42,a);
     printf(" ");
     }
@@ -406,7 +406,7 @@ void affichageCases()
     gotoligcol(36,5);
     printf("Protee");
     Color(6,6);
-    for(int a = 2; a<14; a++){
+    for(int a = 1; a<14; a++){
     gotoligcol(34,a);
     printf(" ");
     }
@@ -422,17 +422,17 @@ void affichageCases()
     gotoligcol(20,5);
     printf("Triton");
     Color(6,6);
-    for(int a = 2; a<14; a++){
+    for(int a = 1; a<14; a++){
     gotoligcol(18,a);
     printf(" ");
     }
     Color(15,0);
 
     //case 40
-    gotoligcol(12,5);
+    gotoligcol(12,4);
     printf("Neptune");
     Color(6,6);
-    for(int a = 2; a<14; a++){
+    for(int a = 1; a<14; a++){
     gotoligcol(10,a);
     printf(" ");
     }
