@@ -1,26 +1,29 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int Banque(int *joueur, int *montant, int position)
+void banque(int *joueur, int *montant, int *position, int *trouNoir)
 {
-    if (position == 0)
+
+    if (position == 0) /// Si le joueur s'arrête sur la case départ
     {
         montant = montant + 200;
     }
 
-    if ((position == 2) || (position == 17) || (position == 33))
+    if ((position == 2) || (position == 17) || (position == 33)) /// Si le joueur tombe sur une case caisse de communauté
     {
-        montant = communaute();
+        communaute(joueur, montant, position, trouNoir);
     }
 
-    if ((position == 7) || (position == 22) || (position == 36))
+    if ((position == 7) || (position == 22) || (position == 36)) /// Si le joueur tombe sur une case chance
     {
-        montant = chance();
+        chance(joueur, montant, position, trouNoir, maison, hotel);
     }
 
+    /// Si le joueur tombe sur une case de taxe :
     if (position == 4)
     {
-        montant = montant - /// montant à définir;
+        printf ("Vous passez par un peage. Vous payez 200€. \n");
+        montant = montant - 200;
     }
 
     if (position == 12)
@@ -35,8 +38,7 @@ int Banque(int *joueur, int *montant, int position)
 
     if (position == 38)
     {
-        montant = montant - /// montant à définir;
+        printf ("Vous vous faites piller. Vous payez 100€. \n");
+        montant = montant - 100;
     }
-    
-    return montant;
 }
