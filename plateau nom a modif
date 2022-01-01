@@ -269,7 +269,7 @@ void affichageCases()
 
      //case 22
     gotoligcol(85,11);
-    printf("Venus");
+    printf("Mercure");
     Color(13,13);
     for(int a = 7; a<20; a++){
     gotoligcol(83,a);
@@ -285,7 +285,7 @@ void affichageCases()
 
     //case 24
     gotoligcol(84,102);
-    printf("Mercure");
+    printf("Venus");
     Color(13,13);
     for(int a = 99; a<112; a++){
     gotoligcol(82,a);
