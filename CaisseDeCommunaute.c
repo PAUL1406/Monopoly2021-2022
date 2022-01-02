@@ -19,7 +19,7 @@ int communaute(int *joueur, int *montant, int *position, int *trouNoir)
 
     if (carte == 2)
     {
-        printf ("Payez la reparation du cable endommage pour 10€ (saisir : 1) ou bien tirez une carte CHANCE (saisir : 2) : ");
+        printf ("Payez la reparation du cable endommage pour 10 euros (saisir : 1) ou bien tirez une carte CHANCE (saisir : 2) : ");
         scanf ("%d", &choix);
 
         if (choix == 1)
@@ -35,31 +35,31 @@ int communaute(int *joueur, int *montant, int *position, int *trouNoir)
 
     if (carte == 3)
     {
-        printf ("Votre vaisseau remporte le deuxieme prix de rapidite. Recevez 10€. \n");
+        printf ("Votre vaisseau remporte le deuxieme prix de rapidite. Recevez 10 euros. \n");
         montant = montant + 10;
     }
 
     if (carte == 4)
     {
-        printf ("Vous trouvez 20€ flottant dans l'espace. \n");
+        printf ("Vous trouvez 20 euros flottant dans l'espace. \n");
         montant = montant + 20;
     }
 
     if (carte == 5)
     {
-        printf ("Vous recevez un prime de 100€. \n");
+        printf ("Vous recevez un prime de 100 euros. \n");
         montant = montant + 100;
     }
 
     if (carte == 6)
     {
-        printf ("Votre vaisseau recoit de l'aide d'extraterrestres. Vous recevez 25€. \n");
+        printf ("Votre vaisseau recoit de l'aide d'extraterrestres. Vous recevez 25 euros. \n");
         montant = montant + 25;
     }
 
     if (carte == 7)
     {
-        printf ("Un membre de votre equipage tombe malade. La note du medecin s'eleve a 50€. \n");
+        printf ("Un membre de votre equipage tombe malade. La note du medecin s'eleve a 50 euros. \n");
         montant = montant - 50;
     }
 
@@ -72,19 +72,19 @@ int communaute(int *joueur, int *montant, int *position, int *trouNoir)
 
     if (carte == 9)
     {
-        printf ("Vos aides vous rapportent la somme de 20€. \n");
+        printf ("Vos aides vous rapportent la somme de 20 euros. \n");
         montant = montant + 20;
     }
 
     if (carte == 10)
     {
-        printf ("Vous payez des reparations 100€. \n");
+        printf ("Vous payez des reparations 100 euros. \n");
         montant = montant - 100;
     }
 
     if (carte == 11)
     {
-        printf ("Votre equipage vous souhaite votre anniversaire. Vous recevez 50€. \n");
+        printf ("Votre equipage vous souhaite votre anniversaire. Vous recevez 50 euros. \n");
         montant = montant + 50;
     }
 
@@ -120,19 +120,19 @@ int communaute(int *joueur, int *montant, int *position, int *trouNoir)
 
     if (carte == 14)
     {
-        printf ("Le meilleur membre de l'equipage recoit une prime. Vous payez 50€. \n");
+        printf ("Le meilleur membre de l'equipage recoit une prime. Vous payez 50 euros. \n");
         montant = montant - 50;
     }
 
     if (carte == 15)
     {
-        printf ("Erreur de la banque en votre faveur. Vous recevez 200€. \n");
+        printf ("Erreur de la banque en votre faveur. Vous recevez 200 euros. \n");
         montant = montant + 200;
     }
 
     if (carte == 16)
     {
-        printf ("Vous recevez 100€ de la part d'un admirateur. \n");
+        printf ("Vous recevez 100 euros de la part d'un admirateur. \n");
         montant = montant + 100;
     }
 
