@@ -30,25 +30,25 @@ int chance(int *joueur, int *montant, int *position, int *trouNoir, int maison, 
 
     if (carte == 4)
     {
-        printf ("Vous payez 15€ pour l'anniversaire d'un membre de l'équipage. \n");
+        printf ("Vous payez 15 euros pour l'anniversaire d'un membre de l'équipage. \n");
         montant = montant - 15;
     }
 
     if (carte == 5)
     {
-        printf ("Votre vaisseau gagne un concours de beaute. Vous gagnez 100€. \n");
+        printf ("Votre vaisseau gagne un concours de beaute. Vous gagnez 100 euros. \n");
         montant = montant + 100;
     }
 
     if (carte == 6)
     {
-        printf ("Vous recevez 250€ pour votre aide aux differentes populations extraterrestres. \n");
+        printf ("Vous recevez 250 euros pour votre aide aux differentes populations extraterrestres. \n");
         montant = montant + 250;
     }
 
     if (carte == 7)
     {
-        printf ("Votre vaisseau tombe en panne. Les reparations coutent 150€. \n");
+        printf ("Votre vaisseau tombe en panne. Les reparations coutent 150 euros. \n");
         montant = montant - 150;
     }
 
@@ -57,7 +57,7 @@ int chance(int *joueur, int *montant, int *position, int *trouNoir, int maison, 
         printf ("Vous avancez jusqu'a Glory. \n");
         if (position > 15)
         {
-            printf ("Vous etes passe(e) par la case Depart. Vous recevez 200€. \n")
+            printf ("Vous etes passe(e) par la case Depart. Vous recevez 200 euros. \n")
             montant = montant + 200;
         }
         position = 15;
@@ -65,7 +65,7 @@ int chance(int *joueur, int *montant, int *position, int *trouNoir, int maison, 
 
     if (carte == 9)
     {
-        printf ("Rendez-vous sur la Terre. \n")
+        printf ("Rendez-vous sur Terre. \n")
         position = 39;
     }
 
@@ -75,7 +75,7 @@ int chance(int *joueur, int *montant, int *position, int *trouNoir, int maison, 
         montant = montant - 100;
         if (position > 11)
         {
-            printf ("Vous etes passe(e) par la case Depart. Vous recevez 200€. \n")
+            printf ("Vous etes passe(e) par la case Depart. Vous recevez 200 euros. \n")
             montant = montant + 200;
         }
         position = 11;
@@ -83,7 +83,7 @@ int chance(int *joueur, int *montant, int *position, int *trouNoir, int maison, 
 
     if (carte == 11)
     {
-        printf ("Faites des reparations dans toutes vos proprietes : 25€ par maison / 100€ par hotel. \n");
+        printf ("Faites des reparations dans toutes vos proprietes : 25 euros par maison / 100 euros par hotel. \n");
         montant = montant - 25 * maison - 100 * hotel;
     }
 
@@ -119,19 +119,19 @@ int chance(int *joueur, int *montant, int *position, int *trouNoir, int maison, 
 
     if (carte == 14)
     {
-        printf ("Vos proprietes necessitent des renovations a raison de : 40€ par maison / 115€ par hotel. \n");
+        printf ("Vos proprietes necessitent des renovations a raison de : 40 euros par maison / 115 euros par hotel. \n");
         montant = montant - 40 * maison - 115 * hotel;
     }
 
     if (carte == 15)
     {
-        printf ("C'est votre jour de chance. Vous recevez 20€. \n");
+        printf ("C'est votre jour de chance. Vous recevez 20 euros. \n");
         montant = montant + 20;
     }
 
     if (carte == 16)
     {
-        printf ("Vous recevez une amende de 20€. \n");
+        printf ("Vous recevez une amende de 20 euros. \n");
         montant = montant - 20;
     }
 
