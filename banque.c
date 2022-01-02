@@ -22,7 +22,7 @@ void banque(int *joueur, int *montant, int *position, int *trouNoir)
     /// Si le joueur tombe sur une case de taxe :
     if (position == 4)
     {
-        printf ("Vous passez par un peage. Vous payez 200€. \n");
+        printf ("Vous passez par un peage. Vous payez 200 euros. \n");
         montant = montant - 200;
     }
 
@@ -38,7 +38,7 @@ void banque(int *joueur, int *montant, int *position, int *trouNoir)
 
     if (position == 38)
     {
-        printf ("Vous vous faites piller. Vous payez 100€. \n");
+        printf ("Vous vous faites piller. Vous payez 100 euros. \n");
         montant = montant - 100;
     }
 }
