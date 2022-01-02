@@ -1369,17 +1369,17 @@ void affichageDesProprietes (int position, int occupation)
         printf ("  -       Avec HOTEL         2000 \n");
 
         printf ("\n");
-        printf (" Si un joueur possede TOUS les   \n");
-        printf ("     astres d'un Groupe de       \n");
-        printf (" Couleur quelconque, le loyer    \n");
-        printf ("  des astres nus de ce groupe    \n");
-        printf ("          est double.            \n");
+        printf ("  Si un joueur possede TOUS les   \n");
+        printf ("      astres d'un Groupe de       \n");
+        printf ("  Couleur quelconque, le loyer    \n");
+        printf ("   des astres nus de ce groupe    \n");
+        printf ("           est double.            \n");
 
         printf ("\n");
-        printf ("      Prix des Maisons :         \n");
-        printf ("      200 euros chacune          \n");
-        printf ("      Prix d'un Hotel :          \n");
-        printf ("   200 euros plus 4 maisons      \n");
+        printf ("       Prix des Maisons :         \n");
+        printf ("       200 euros chacune          \n");
+        printf ("       Prix d'un Hotel :          \n");
+        printf ("    200 euros plus 4 maisons      \n");
 
         printf ("\n");
         printf ("Valeur Hypothecaire de l'astre : \n");
