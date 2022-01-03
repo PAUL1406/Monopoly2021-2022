@@ -952,7 +952,7 @@ void affichageDesProprietes (int position, int occupation)
         }
     }
 
-    if (position == 30)
+    if (position == 31)
     {
         printf ("Atterrissage sur la Terre : euros \n");
         printf ("LOYER     Astre nu             50 \n");
