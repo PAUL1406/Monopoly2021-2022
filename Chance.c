@@ -13,7 +13,7 @@ int chance(int *joueur, int *montant, int *position, int *trouNoir, int maison, 
     if (carte == 1)
     {
         printf ("Vous allez a Uranus. \n");
-        position = 24;
+        position = 19;
     }
 
     if (carte == 2)
@@ -55,30 +55,29 @@ int chance(int *joueur, int *montant, int *position, int *trouNoir, int maison, 
     if (carte == 8)
     {
         printf ("Vous avancez jusqu'a Glory. \n");
-        if (position > 15)
+        if (position > 12)
         {
             printf ("Vous etes passe(e) par la case Depart. Vous recevez 200 euros. \n")
             montant = montant + 200;
         }
-        position = 15;
+        position = 12;
     }
 
     if (carte == 9)
     {
         printf ("Rendez-vous sur Terre. \n")
-        position = 39;
+        position = 31;
     }
 
     if (carte == 10)
     {
-        printf ("Avancez jusqu'a Deinos. \n");
-        montant = montant - 100;
-        if (position > 11)
+        printf ("Avancez jusqu'a Phobos. \n");
+        if (position > 9)
         {
             printf ("Vous etes passe(e) par la case Depart. Vous recevez 200 euros. \n")
             montant = montant + 200;
         }
-        position = 11;
+        position = 9;
     }
 
     if (carte == 11)
@@ -97,7 +96,7 @@ int chance(int *joueur, int *montant, int *position, int *trouNoir, int maison, 
     {
         int choix;
         printf ("Vous vous perdez dans un trou noir.");
-        position = 30;
+        position = 24;
         if (trouNoir == 1)
         {
             printf ("Souhaitez vous utiliser votre carte de sortie de trou noir ? (Si oui : saisir 1 / Si non : saisir 0) : ");
