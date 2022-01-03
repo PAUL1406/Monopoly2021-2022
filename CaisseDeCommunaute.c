@@ -12,7 +12,7 @@ int communaute(int *joueur, int *montant, int *position, int *trouNoir)
 
     if (carte == 1)
     {
-        printf ("Vous retournez sur Venus. \n");
+        printf ("Vous retournez sur Mercure. \n");
         position = 1;
         montant = montant + 200;
     }
@@ -98,7 +98,7 @@ int communaute(int *joueur, int *montant, int *position, int *trouNoir)
     {
         int choix;
         printf ("Vous vous perdez dans un trou noir.");
-        position = 30;
+        position = 24;
         if (trouNoir == 1)
         {
             printf ("Souhaitez vous utiliser votre carte de sortie de trou noir ? (Si oui : saisir 1 / Si non : saisir 0) : ");
