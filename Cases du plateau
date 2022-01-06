@@ -11,7 +11,7 @@ struct Proprietes
         char nomCase[30];
         int position;
         int prix;
-        char proprietaire[30];
+        int proprietaire;
         int batiment[5];
         int hypotheque;
         int prixHypotheque;
@@ -349,7 +349,7 @@ struct Proprietes
 
 int main()
 {
-    Proprietes p[NOMBRE_PROPRIETES].
+    Proprietes p[NOMBRE_PROPRIETES];
     remplirCases(p);
     return 0;
 }
