@@ -1,0 +1,24 @@
+# depslib dependency file v1.0
+1641388121 source:c:\users\djang\onedrive\documents\ece cours ing1\info\code blocks\menu\plateau.c
+	"maBiblio.h"
+
+1641638780 c:\users\djang\onedrive\documents\ece cours ing1\info\code blocks\menu\mabiblio.h
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+
+1641639733 source:c:\users\djang\onedrive\documents\ece cours ing1\info\code blocks\menu\main.c
+	"maBiblio.h"
+
+1641585255 source:c:\users\djang\onedrive\documents\ece cours ing1\info\code blocks\menu\menu.c
+	"maBiblio.h"
+
+1641640403 source:c:\users\djang\onedrive\documents\ece cours ing1\info\code blocks\menu\lancerdes.c
+	"maBiblio.h"
+
+1641640511 source:c:\users\djang\onedrive\documents\ece cours ing1\info\code blocks\menu\debut tour.c
+	"maBiblio.h"
+
+1641639514 source:c:\users\djang\onedrive\documents\ece cours ing1\info\code blocks\menu\deplacement.c
+	"maBiblio.h"
+
