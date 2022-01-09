@@ -1,0 +1,93 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+int LancerDesDes(int *compteur,  Joueur* j)
+{
+    int de1, de2, min = 1, max = 6, SommeDesDes;
+    srand (time(NULL));
+
+    /// affectation d'un nombre aléatoire compris entre 1 et 6
+    de1 = rand()%(max - min + 1) + min;
+    de2 = rand()%(max - min + 1) + min;
+
+    /// affichage des valeurs des 2 dés
+    printf ("Le resultat du premier de est : %d. \n", de1);
+    printf ("Le resultat du deuxieme de est : %d. \n", de2);
+
+    /// somme des dés
+    SommeDesDes = de1 + de2;
+
+    /// affichage de l'avancement
+    printf ("Vous avancez de %d cases. \n", SommeDesDes);
+
+
+
+    /// 1er DOUBLE le joueur rejoue
+    if (de1 == de2)
+    {
+        printf("DOUBLE ! JOUEZ ET ENSUITE VOUS POURREZ RELANCER LES DES ET REJOUER\n");
+        printf("\n");
+        de1 = rand()%(max - min + 1) + min;
+        de2 = rand()%(max - min + 1) + min;
+
+        printf ("Le resultat du premier de est : %d. \n", de1);
+        printf ("Le resultat du deuxieme de est : %d. \n", de2);
+
+        /// somme des dés
+        SommeDesDes = de1 + de2;
+
+        /// affichage de l'avancement
+        printf ("Vous avancez de %d cases. \n", SommeDesDes);
+///     ///JOUEUR JOUE
+        *compteur = *compteur + 1;
+
+
+        /// 2erme DOUBLE le joueur rejoue
+        if (de1 == de2)
+        {
+            printf("DOUBLE ! JOUEZ ET ENSUITE VOUS POURREZ RELANCER LES DES ET REJOUER\n");
+            printf("\n");
+            de1 = rand()%(max - min + 1) + min;
+            de2 = rand()%(max - min + 1) + min;
+
+            printf ("Le resultat du premier de est : %d. \n", de1);
+            printf ("Le resultat du deuxieme de est : %d. \n", de2);
+
+            /// somme des dés
+            SommeDesDes = de1 + de2;
+
+            /// affichage de l'avancement
+            printf ("Vous avancez de %d cases. \n", SommeDesDes);
+///            ///LE JOUEUR JOUE
+            *compteur = *compteur + 1;
+
+
+            ///PRISON SI LE JOUEUR REFAIT UN DOUBLE
+            if (compteur == 2)
+            {
+            *compteur = 0;
+            SommeDesDes = 0;
+            printf ("ENCORE DOUBLE!\t Vous etes aspire par un trou noir...");
+            ///position du joueur est en prison
+            j->position=8;
+            }
+        }
+    }
+    return SommeDesDes;
+}
+
+int main()
+{
+    int cpt = 0;
+    int position = 0;
+
+    position = LancerDesDes(&cpt);
+
+    if (cpt != 0)
+    {
+        LancerDesDes(&cpt);
+        printf("%d \n", cpt);
+    }
+    return 0;
+}
