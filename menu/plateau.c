@@ -1,78 +1,95 @@
 #include "maBiblio.h"
 
-///Couleur plateau
-void Color(int couleurDuTexte,int couleurDeFond) /// fonction d'affichage de couleurs
+/// Fonction pour l'affichage des couleurs du plateau
+void Color(int couleurDuTexte,int couleurDeFond)
 {
-    HANDLE H=GetStdHandle(STD_OUTPUT_HANDLE);
+    HANDLE H = GetStdHandle(STD_OUTPUT_HANDLE);
     SetConsoleTextAttribute(H,couleurDeFond*16+couleurDuTexte);
 }
 
-
-void gotoligcol( int lig, int col ) {
-
 /// ressources
-
+void gotoligcol(int ligne, int colonne )
+{
     COORD mycoord;
 
-    mycoord.X = col;
+    mycoord.X = colonne;
 
-    mycoord.Y = lig;
+    mycoord.Y = ligne;
 
-    SetConsoleCursorPosition( GetStdHandle( STD_OUTPUT_HANDLE ), mycoord );
-
+    SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), mycoord);
 }
 
 void affichagePlateau()
 {
     int i,j;
-    for (i=0; i<1; ++i){
-        for (j=0; j<1; ++j){
+
+    for (i=0; i<1; ++i)
+    {
+        for (j=0; j<1; ++j)
+        {
             printf("%c",0xC9);
         }
     }
+
     for(i=1;i<153;i++)
     {
-                for(j=0;j<1;j++)
-                {
-                    printf("%c",0xCD);
-                }
+        for(j=0;j<1;j++)
+            {
+                printf("%c",0xCD);
+            }
     }
-    for (i=152; i<153; ++i){
-        for (j=0; j<1; ++j){
+
+    for (i=152; i<153; ++i)
+    {
+        for (j=0; j<1; ++j)
+        {
             printf("%c",0xBB);
         }
     }
-    for (i=0; i<1 ;++i){
-        for (j=1; j<37; ++j){
+
+    for (i=0; i<1 ;++i)
+    {
+        for (j=1; j<37; ++j)
+        {
             printf("\n");
             printf("%c",0xBA);
         }
     }
-    for (i=36; i<37; ++i){
-        for (j=0; j<1; ++j){
+
+    for (i=36; i<37; ++i)
+    {
+        for (j=0; j<1; ++j)
+        {
             printf("\n");
             printf("%c",0xC8);
         }
     }
+
     for(i=1;i<153;i++)
     {
-                for(j=36;j<37;j++)
-                {
-                    printf("%c",0xCD);
-                }
+        for(j=36;j<37;j++)
+        {
+            printf("%c",0xCD);
+        }
     }
-    for (i=152; i<153; ++i){
-        for (j=36; j<37; ++j){
+
+    for (i=152; i<153; ++i)
+    {
+        for (j=36; j<37; ++j)
+        {
             printf("%c",0xBC);
         }
     }
+
     for(i=153;i<154;i++)
     {
-        for (j=1;j<37;j++){
+        for (j=1;j<37;j++)
+        {
             gotoligcol(j,i);
             printf("%c", 0xBA);
         }
     }
+
     for (i=17;i<18;i++)
     {
         for (j=1;j<37;j++)
@@ -81,6 +98,7 @@ void affichagePlateau()
             printf("%c", 0xBA);
         }
     }
+
     for (i=136;i<137;i++)
     {
         for (j=1;j<37;j++)
@@ -89,6 +107,7 @@ void affichagePlateau()
             printf("%c", 0xBA);
         }
     }
+
     for (i=1;i<153;i++)
     {
         for (j=4;j<5;j++)
@@ -97,7 +116,8 @@ void affichagePlateau()
             printf("%c", 0xCD);
         }
     }
-     for (i=1;i<153;i++)
+
+    for (i=1;i<153;i++)
     {
         for (j=32;j<33;j++)
         {
@@ -105,7 +125,8 @@ void affichagePlateau()
             printf("%c", 0xCD);
         }
     }
-     for (i=1;i<17;i++)
+
+    for (i=1;i<17;i++)
     {
         for (j=8;j<9;j++)
         {
@@ -113,7 +134,8 @@ void affichagePlateau()
             printf("%c", 0xCD);
         }
     }
-     for (i=1;i<17;i++)
+
+    for (i=1;i<17;i++)
     {
         for (j=12;j<13;j++)
         {
@@ -121,7 +143,8 @@ void affichagePlateau()
             printf("%c", 0xCD);
         }
     }
-     for (i=1;i<17;i++)
+
+    for (i=1;i<17;i++)
     {
         for (j=16;j<17;j++)
         {
@@ -129,7 +152,8 @@ void affichagePlateau()
             printf("%c", 0xCD);
         }
     }
-     for (i=1;i<17;i++)
+
+    for (i=1;i<17;i++)
     {
         for (j=20;j<21;j++)
         {
@@ -137,7 +161,8 @@ void affichagePlateau()
             printf("%c", 0xCD);
         }
     }
-     for (i=1;i<17;i++)
+
+    for (i=1;i<17;i++)
     {
         for (j=24;j<25;j++)
         {
@@ -145,7 +170,8 @@ void affichagePlateau()
             printf("%c", 0xCD);
         }
     }
-     for (i=1;i<17;i++)
+
+    for (i=1;i<17;i++)
     {
         for (j=28;j<29;j++)
         {
@@ -153,7 +179,8 @@ void affichagePlateau()
             printf("%c", 0xCD);
         }
     }
-     for (i=137;i<153;i++)
+
+    for (i=137;i<153;i++)
     {
         for (j=8;j<9;j++)
         {
@@ -161,7 +188,8 @@ void affichagePlateau()
             printf("%c", 0xCD);
         }
     }
-     for (i=137;i<153;i++)
+
+    for (i=137;i<153;i++)
     {
         for (j=12;j<13;j++)
         {
@@ -169,7 +197,8 @@ void affichagePlateau()
             printf("%c", 0xCD);
         }
     }
-     for (i=137;i<153;i++)
+
+    for (i=137;i<153;i++)
     {
         for (j=16;j<17;j++)
         {
@@ -177,7 +206,8 @@ void affichagePlateau()
             printf("%c", 0xCD);
         }
     }
-     for (i=137;i<153;i++)
+
+    for (i=137;i<153;i++)
     {
         for (j=20;j<21;j++)
         {
@@ -185,7 +215,8 @@ void affichagePlateau()
             printf("%c", 0xCD);
         }
     }
-     for (i=137;i<153;i++)
+
+    for (i=137;i<153;i++)
     {
         for (j=24;j<25;j++)
         {
@@ -193,7 +224,8 @@ void affichagePlateau()
             printf("%c", 0xCD);
         }
     }
-     for (i=137;i<153;i++)
+
+    for (i=137;i<153;i++)
     {
         for (j=28;j<29;j++)
         {
@@ -201,6 +233,7 @@ void affichagePlateau()
             printf("%c", 0xCD);
         }
     }
+
     for (i=34;i<35;i++)
     {
         for (j=1;j<4;j++)
@@ -208,13 +241,14 @@ void affichagePlateau()
             gotoligcol(j,i);
             printf("%c", 0xBA);
         }
-         for(j=33;j<37;j++)
+
+        for(j=33;j<37;j++)
         {
             gotoligcol(j,i);
             printf("%c", 0xBA);
         }
-
     }
+
     for (i=51;i<52;i++)
     {
         for (j=1;j<4;j++)
@@ -222,13 +256,14 @@ void affichagePlateau()
             gotoligcol(j,i);
             printf("%c", 0xBA);
         }
+
         for(j=33;j<37;j++)
         {
             gotoligcol(j,i);
             printf("%c", 0xBA);
         }
-
     }
+
     for (i=68;i<69;i++)
     {
         for (j=1;j<4;j++)
@@ -236,12 +271,14 @@ void affichagePlateau()
             gotoligcol(j,i);
             printf("%c", 0xBA);
         }
+
         for(j=33;j<37;j++)
         {
             gotoligcol(j,i);
             printf("%c", 0xBA);
         }
     }
+
     for (i=85;i<86;i++)
     {
         for (j=1;j<4;j++)
@@ -249,12 +286,14 @@ void affichagePlateau()
             gotoligcol(j,i);
             printf("%c", 0xBA);
         }
+
         for(j=33;j<37;j++)
         {
             gotoligcol(j,i);
             printf("%c", 0xBA);
         }
     }
+
     for (i=102;i<103;i++)
     {
         for (j=1;j<4;j++)
@@ -262,12 +301,14 @@ void affichagePlateau()
             gotoligcol(j,i);
             printf("%c", 0xBA);
         }
+
         for(j=33;j<37;j++)
         {
             gotoligcol(j,i);
             printf("%c", 0xBA);
         }
     }
+
     for (i=119;i<120;i++)
     {
         for (j=1;j<4;j++)
@@ -275,6 +316,7 @@ void affichagePlateau()
             gotoligcol(j,i);
             printf("%c", 0xBA);
         }
+
         for(j=33;j<37;j++)
         {
             gotoligcol(j,i);
@@ -282,169 +324,92 @@ void affichagePlateau()
         }
     }
 
+    for (i=51;i<52;i++)
+    {
+        for (j=1;j<4;j++)
+        {
+            gotoligcol(j,i);
+            printf("%c", 0xBA);
+        }
 
+        for(j=33;j<37;j++)
+        {
+            gotoligcol(j,i);
+            printf("%c", 0xBA);
+        }
+    }
 
+    for (i=68;i<69;i++)
+    {
+        for (j=1;j<4;j++)
+        {
+            gotoligcol(j,i);
+            printf("%c", 0xBA);
+        }
 
+        for(j=33;j<37;j++)
+        {
+            gotoligcol(j,i);
+            printf("%c", 0xBA);
+        }
+    }
+
+    for (i=85;i<86;i++)
+    {
+        for (j=1;j<4;j++)
+        {
+            gotoligcol(j,i);
+            printf("%c", 0xBA);
+        }
+
+        for(j=33;j<37;j++)
+        {
+            gotoligcol(j,i);
+            printf("%c", 0xBA);
+        }
+    }
+
+    for (i=102;i<103;i++)
+    {
+        for (j=1;j<4;j++)
+        {
+            gotoligcol(j,i);
+            printf("%c", 0xBA);
+        }
+
+        for(j=33;j<37;j++)
+        {
+            gotoligcol(j,i);
+            printf("%c", 0xBA);
+        }
+    }
+
+    for (i=119;i<120;i++)
+    {
+        for (j=1;j<4;j++)
+        {
+            gotoligcol(j,i);
+            printf("%c", 0xBA);
+        }
+
+        for(j=33;j<37;j++)
+        {
+            gotoligcol(j,i);
+            printf("%c", 0xBA);
+        }
+    }
 }
 void affichageCases()
 {
-    //case 1
-    Color(15,0);
-    Color(10,0);
-    gotoligcol(2,5);
-    printf("Station");
-
-    //case 2
-    Color(15,0);
-    gotoligcol(2,23);
-    printf("Umbriel");
-    Color(4,4);
-    for(int a = 18; a<34; a++){
-    gotoligcol(1,a);
-    printf(" ");
-    }
-
-    //case 3
-     Color(9,0);
-    gotoligcol(2,40);
-    printf("Caisse");
-    Color(15,0);
-
-    //case 4
-    Color(15,0);
-    gotoligcol(2,57);
-    printf("Uranus");
-    Color(4,4);
-    for(int a = 52; a<68; a++){
-    gotoligcol(1,a);
-    printf(" ");
-    }
-    Color(15,0);
-    //case 5
-    gotoligcol(2,74);
-    printf("Hubble");
-    Color(7,7);
-    for(int a = 69; a<85; a++){
-    gotoligcol(1,a);
-    printf(" ");
-    }
-    Color(15,0);
-
-    //case 6
-    gotoligcol(2,91);
-    printf("Titan");
-    Color(14,14);
-    for(int a = 86; a<102; a++){
-    gotoligcol(1,a);
-    printf(" ");
-    }
-    Color(15,0);
-
- //case7
-     Color(15,0);
-    Color(4,0);
-    gotoligcol(2,108);
-    printf("Etoile");
-
-
-    //case 8
-    Color(15,0);
-    gotoligcol(2,125);
-    printf("Saturne");
-    Color(14,14);
-    for(int a = 120; a<136; a++){
-    gotoligcol(1,a);
-    printf(" ");
-    }
-    Color(15,0);
-
-    //case9
-    Color(2,0);
-    gotoligcol(2,140);
-    printf("Aspiration");
-    Color(15,0);
-
-    //case 10
-    gotoligcol(6,142);
-    printf("Europe");
-    Color(2,2);
-    for(int a =137; a<153; a++){
-    gotoligcol(5,a);
-    printf(" ");
-    }
-    Color(15,0);
-
-
-    //case 11
-    Color(9,0);
-    gotoligcol(10,142);
-    printf("Caisse");
-    Color(15,0);
-
-
-    //case 12
-    gotoligcol(14,141);
-    printf("Jupiter");
-    Color(2,2);
-    for(int a = 137; a<153; a++){
-    gotoligcol(13,a);
-    printf(" ");
-    }
-    Color(15,0);
-
-
-
-
-    //case 13
-    gotoligcol(18,141);
-    printf("Vanguard");
-    Color(7,7);
-    for(int a = 137; a<153; a++){
-    gotoligcol(17,a);
-    printf(" ");
-    }
-    Color(15,0);
-
-
-    //case 14
-    Color(15,0);
-    gotoligcol(22,142);
-    printf("Lune");
-    Color(1,1);
-    for(int a = 137; a<153; a++){
-    gotoligcol(21,a);
-    printf(" ");
-    }
-    Color(15,0);
-
-
-    //case15
-    Color(4,0);
-    gotoligcol(26,142);
-    printf("Etoile");
-        Color(15,0);
-
-
-    //case 16
-    gotoligcol(30,142);
-    printf("Terre");
-    Color(1,1);
-    for(int a = 137; a<153; a++){
-    gotoligcol(29,a);
-    printf(" ");
-    }
-    Color(15,0);
-
-    //case 17
-
+    /// Case 0  --- DEPART
     Color(10,0);
     gotoligcol(34,142);
-    printf("Depart");
-     Color(15,0);
+    printf("DEPART");
+    Color(15,0);
 
-     //case 18
+    /// Case 1  --- MERCURE
     gotoligcol(34,125);
-    printf("Venus");
+    printf("MERCURE");
     Color(8,8);
     for(int a = 120; a<136; a++){
     gotoligcol(33,a);
@@ -452,15 +417,15 @@ void affichageCases()
     }
     Color(15,0);
 
-    //case 19
+    /// Case 2  --- PILLAGE
     Color(12,0);
     gotoligcol(34,108);
-    printf("pillage");
+    printf("PILLAGE");
     Color(15,0);
 
-    //case 20
+    /// Case 3  --- VENUS
     gotoligcol(34,91);
-    printf("Mercure");
+    printf("VENUS");
     Color(8,8);
     for(int a = 86; a<102; a++){
     gotoligcol(33,a);
@@ -468,9 +433,9 @@ void affichageCases()
     }
     Color(15,0);
 
-    //case 21
+    /// Case 4  --- SPOUTNIK 1
     gotoligcol(34,72);
-    printf("Spoutnik 1");
+    printf("SPOUTNIK 1");
     Color(7,7);
     for(int a = 69; a<85; a++){
     gotoligcol(33,a);
@@ -478,9 +443,9 @@ void affichageCases()
     }
     Color(15,0);
 
-    //case 22
+    /// Case 5  --- CHARON
     gotoligcol(34,57);
-    printf("Charon");
+    printf("CHARON");
     Color(3,3);
     for(int a = 52; a<68; a++){
     gotoligcol(33,a);
@@ -488,17 +453,15 @@ void affichageCases()
     }
     Color(15,0);
 
-
-
-    //case 23
+    /// Case 6  --- ETOILE
     Color (1,0);
     gotoligcol(34,40);
-    printf("Etoile");
+    printf("ETOILE");
     Color(15,0);
 
-    //case 24
+    /// Case 7  --- PLUTON
     gotoligcol(34,23);
-    printf("Pluton");
+    printf("PLUTON");
     Color(3,3);
     for(int a = 18; a<34; a++){
     gotoligcol(33,a);
@@ -506,13 +469,13 @@ void affichageCases()
     }
     Color(15,0);
 
-    //case 25
+    /// Case 8  --- TROU NOIR
     Color(2,0);
     gotoligcol(34,4);
-    printf("Trou Noir");
+    printf("TROU NOIR");
     Color(15,0);
 
-    //case 26
+    /// Case 9  --- PHOBOS
     gotoligcol(30,6);
     printf("Phobos");
     Color(5,5);
@@ -522,15 +485,15 @@ void affichageCases()
     }
     Color(15,0);
 
-     //case 27
-     Color(9,0);
+    /// Case 10 --- CAISSE
+    Color(9,0);
     gotoligcol(26,5);
-    printf("Caisse");
+    printf("CAISSE");
     Color(15,0);
 
-    //case 28
+    /// Case 11 --- MARS
     gotoligcol(22,6);
-    printf("Mars");
+    printf("MARS");
     Color(5,5);
     for(int a = 1; a<17; a++){
     gotoligcol(21,a);
@@ -538,9 +501,9 @@ void affichageCases()
     }
     Color(15,0);
 
-    //case 29
+    /// Case 12 --- GLORY
     gotoligcol(18,5);
-    printf("Glory");
+    printf("GLORY");
     Color(7,7);
     for(int a = 1; a<17; a++){
     gotoligcol(17,a);
@@ -548,30 +511,167 @@ void affichageCases()
     }
     Color(15,0);
 
-    //case 30
+    /// Case 13 --- TRITON
     gotoligcol(14,5);
-    printf("Triton");
-    Color(15,15);
+    printf("TRITON");
+    Color(6,6);
     for(int a = 1; a<17; a++){
     gotoligcol(13,a);
     printf(" ");
     }
     Color(15,0);
 
-
-     //case 31
+    /// Case 14 --- ETOILE
     Color(4,0);
     gotoligcol(10,5);
-    printf("Etoile");
+    printf("ETOILE");
     Color(15,0);
 
-
-    //case 32
+    /// Case 15  --- NEPTUNE
     gotoligcol(6,5);
-    printf("Neptune");
-    Color(15,15);
+    printf("NEPTUNE");
+    Color(6,6);
     for(int a = 1; a<17; a++){
     gotoligcol(5,a);
+    printf(" ");
+    }
+    Color(15,0);
+
+    /// Case 16 --- STATION
+    Color(15,0);
+    Color(10,0);
+    gotoligcol(2,5);
+    printf("STATION");
+
+    /// Case 17 --- UMBRIEL
+    Color(15,0);
+    gotoligcol(2,23);
+    printf("UMBRIEL");
+    Color(4,4);
+    for(int a = 18; a<34; a++){
+    gotoligcol(1,a);
+    printf(" ");
+    }
+
+    /// Case 18 --- CAISSE
+     Color(9,0);
+    gotoligcol(2,40);
+    printf("CAISSE");
+    Color(15,0);
+
+    /// Case 19 --- URANUS
+    Color(15,0);
+    gotoligcol(2,57);
+    printf("URANUS");
+    Color(4,4);
+    for(int a = 52; a<68; a++){
+    gotoligcol(1,a);
+    printf(" ");
+    }
+    Color(15,0);
+
+    /// Case 20 --- HUBBLE
+    gotoligcol(2,74);
+    printf("HUBBLE");
+    Color(7,7);
+    for(int a = 69; a<85; a++){
+    gotoligcol(1,a);
+    printf(" ");
+    }
+    Color(15,0);
+
+    /// Case 21 --- TITAN
+    gotoligcol(2,91);
+    printf("TITAN");
+    Color(14,14);
+    for(int a = 86; a<102; a++){
+    gotoligcol(1,a);
+    printf(" ");
+    }
+    Color(15,0);
+
+    /// Case 22 --- ETOILE
+    Color(4,0);
+    gotoligcol(2,108);
+    printf("ETOILE");
+    Color(15,0);
+
+    /// Case 23 --- SATURNE
+    Color(15,0);
+    gotoligcol(2,125);
+    printf("SATURNE");
+    Color(14,14);
+    for(int a = 120; a<136; a++){
+    gotoligcol(1,a);
+    printf(" ");
+    }
+    Color(15,0);
+
+    /// Case 24 --- ASPIRATION
+    Color(2,0);
+    gotoligcol(2,140);
+    printf("ASPIRATION");
+    Color(15,0);
+
+    /// Case 25 --- EUROPE
+    gotoligcol(6,142);
+    printf("EUROPE");
+    Color(2,2);
+    for(int a =137; a<153; a++){
+    gotoligcol(5,a);
+    printf(" ");
+    }
+    Color(15,0);
+
+    /// Case 26 --- CAISSE
+    Color(9,0);
+    gotoligcol(10,142);
+    printf("CAISSE");
+    Color(15,0);
+
+    /// Case 27 --- JUPITER
+    gotoligcol(14,141);
+    printf("JUPITER");
+    Color(2,2);
+    for(int a = 137; a<153; a++){
+    gotoligcol(13,a);
+    printf(" ");
+    }
+    Color(15,0);
+
+    /// Case 28 --- VANGUARD
+    gotoligcol(18,141);
+    printf("VANGUARD");
+    Color(7,7);
+    for(int a = 137; a<153; a++){
+    gotoligcol(17,a);
+    printf(" ");
+    }
+    Color(15,0);
+
+    /// Case 29 --- LUNE
+    Color(15,0);
+    gotoligcol(22,142);
+    printf("LUNE");
+    Color(1,1);
+    for(int a = 137; a<153; a++){
+    gotoligcol(21,a);
+    printf(" ");
+    }
+    Color(15,0);
+
+    /// Case 30 --- ETOILE
+    Color(4,0);
+    gotoligcol(26,142);
+    printf("ETOILE");
+    Color(15,0);
+
+    /// Case 31 --- TERRE
+    gotoligcol(30,142);
+    printf("TERRE");
+    Color(1,1);
+    for(int a = 137; a<153; a++){
+    gotoligcol(29,a);
     printf(" ");
     }
     Color(15,0);
