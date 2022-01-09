@@ -19,6 +19,7 @@ int LancerDesDes(int *compteur, Joueur* j)
     printf ("Le resultat du premier de est : %d. \n", de1);
     printf ("Le resultat du deuxieme de est : %d. \n", de2);
     printf ("Vous avancez de %d cases. \n", SommeDesDes);
+    ///LE JOUEUR JOUE
 
     /// 1er DOUBLE le joueur rejoue
     if (de1 == de2){
@@ -30,6 +31,7 @@ int LancerDesDes(int *compteur, Joueur* j)
         printf ("Le resultat du premier de est : %d. \n", de1);
         printf ("Le resultat du deuxieme de est : %d. \n", de2);
         printf ("Vous avancez de %d cases. \n", SommeDesDes);
+        ///LE JOUEUR JOUE
 
          /// 2eme DOUBLE le joueur rejoue
         if (de1 == de2){
@@ -41,6 +43,7 @@ int LancerDesDes(int *compteur, Joueur* j)
             printf ("Le resultat du premier de est : %d. \n", de1);
             printf ("Le resultat du deuxieme de est : %d. \n", de2);
             printf ("Vous avancez de %d cases. \n", SommeDesDes);
+            ///LE JOUEUR JOUE
 
               ///TROU NOIR (=PRISON) SI LE JOUEUR REFAIT UN DOUBLE
             if (*compteur == 3)
